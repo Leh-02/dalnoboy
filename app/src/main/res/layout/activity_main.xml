@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- Шапка приложения (существующая) -->
+    <LinearLayout
+        android:id="@+id/app_header"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#E0E0E0"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/logo"
+            android:scaleType="fitCenter"
+            android:contentDescription="Логотип приложения"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/btn_notifications"
+            android:layout_width="68dp"
+            android:layout_height="78dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Уведомления"
+            android:padding="15dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/not" />
+
+        <ImageButton
+            android:id="@+id/btn_profile"
+            android:layout_width="68dp"
+            android:layout_height="78dp"
+            android:layout_marginStart="20dp"
+            android:scaleType="centerInside"
+            android:padding="15dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Профиль"
+            android:src="@drawable/prof" />
+    </LinearLayout>
+
+    <!-- Основное содержимое с прокруткой -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/app_header"
+        android:layout_above="@id/app_footer"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Основное изображение (существующее) -->
+            <ImageView
+                android:id="@+id/main_image"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/driverfoto"
+                android:scaleType="centerCrop"
+                android:contentDescription="Основное изображение"/>
+
+            <!-- Текстовый контент из Figma -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Водій у DalnoBoy — це більше, ніж просто робота. Це шлях до стабільності, розвитку і гордості за свою справу."
+                    android:textSize="24sp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:lineSpacingMultiplier="1.2"
+                    android:layout_marginBottom="24dp"/>
+
+                <!-- Блок "Ваші обов'язки" -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🚚 Ваші обов'язки"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#FFFFFF"
+                    android:padding="16dp"
+                    android:layout_marginBottom="24dp"
+                    android:outlineProvider="bounds"
+                    android:elevation="2dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="• Своєчасна доставка вантажів між містами України"
+                        android:textSize="16sp"
+                        android:layout_marginBottom="8dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="• Дбайливе ставлення до вантажу — кожна деталь має значення"
+                        android:textSize="16sp"
+                        android:layout_marginBottom="8dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="• Дотримання маршрутів, графіків та стандартів безпеки"
+                        android:textSize="16sp"
+                        android:layout_marginBottom="8dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="• Спілкування з клієнтами на професійному рівні"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+
+                <!-- Блок "Що ми пропонуємо" -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="📈 Що ми пропонуємо"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#FFFFFF"
+                    android:padding="16dp"
+                    android:layout_marginBottom="24dp"
+                    android:outlineProvider="bounds"
+                    android:elevation="2dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="• Стабільну та конкурентну оплату"
+                        android:textSize="16sp"
+                        android:layout_marginBottom="8dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="• Чітко сплановані маршрути та організовану логістику"
+                        android:textSize="16sp"
+                        android:layout_marginBottom="8dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="• Повну підтримку на кожному етапі: від завантаження до прибуття"
+                        android:textSize="16sp"
+                        android:layout_marginBottom="8dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="• Можливість кар'єрного росту в межах компанії"
+                        android:textSize="16sp"
+                        android:layout_marginBottom="8dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="• Роботу в дружній та професійній команді"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+
+                <!-- Блок "Області" -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="📍 Області, по яким ми працюємо:"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• Дніпропетровська\n• Житомирська\n• Запорізька\n• Київська\n• Полтавська\n• Харківська\n• Чернігівська"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="24dp"/>
+
+                <!-- Разделитель -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#D9D9D9"
+                    android:layout_marginVertical="16dp"/>
+
+                <!-- Заключительный текст -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DalnoBoy — це місце, де водій цінується. Тут ти не просто перевозиш вантаж — ти допомагаєш бізнесу рухатися вперед."
+                    android:textSize="18sp"
+                    android:textColor="#000000"
+                    android:textStyle="italic"
+                    android:lineSpacingMultiplier="1.3"
+                    android:layout_marginBottom="24dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Нижнее меню (существующее) -->
+    <LinearLayout
+        android:id="@+id/app_footer"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#E0E0E0"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <ImageButton
+            android:id="@+id/btn_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/home"
+            android:scaleType="centerInside"
+            android:padding="30dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Главная"/>
+
+        <ImageButton
+            android:id="@+id/btn_orders"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/orders"
+            android:scaleType="centerInside"
+            android:padding="30dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Заказы"/>
+
+        <ImageButton
+            android:id="@+id/btn_history"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/history"
+            android:scaleType="centerInside"
+            android:padding="30dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="История"/>
+
+        <ImageButton
+            android:id="@+id/btn_settings"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/settings"
+            android:scaleType="centerInside"
+            android:padding="30dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Настройки"/>
+    </LinearLayout>
+</RelativeLayout>

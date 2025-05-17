@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorBlack">#FF000000</color>
+    <color name="colorWhite">#FFFFFFFF</color>
+    <color name="colorPrimary">#E0E0E0</color>
+    <!-- Для цветовых состояний Switch -->
+    <color name="selector_switch_track">#80CBC4</color>
+    <color name="selector_switch_thumb">#009688</color>
+    <color name="button_gray">#EEEEEE</color>
+    <color name="button_gray_text">#525252</color>
+    <color name="button_red">#F66C6C</color>
+    <color name="button_red_text">#FFFFFF</color>
+</resources>
