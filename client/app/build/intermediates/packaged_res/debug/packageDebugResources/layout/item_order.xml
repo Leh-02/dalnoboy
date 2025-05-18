@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/order_item_bg"
+    android:padding="16dp"
+    android:layout_margin="8dp">
+
+    <!-- Заголовок заказа -->
+    <TextView
+        android:id="@+id/order_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Заказ №1234"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Адрес получения -->
+    <TextView
+        android:id="@+id/pickup_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="pickup: 123 Tralalelo tralaia"
+        android:textColor="#525252"
+        android:textSize="16sp"
+        android:layout_marginBottom="2dp"/>
+
+    <!-- Адрес доставки -->
+    <TextView
+        android:id="@+id/delivery_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delivery: 456 crocodilo"
+        android:textColor="#525252"
+        android:textSize="16sp"
+        android:layout_marginBottom="2dp"/>
+
+    <!-- Время доставки -->
+    <TextView
+        android:id="@+id/eta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ETA: 7 days"
+        android:textColor="#525252"
+        android:textSize="16sp"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Кнопки действий -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton            android:id="@+id/btn_pickup"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:text="Picked up"
+            android:textColor="#525252"
+            android:background="@drawable/btn_gray_bg"
+            android:textAllCaps="false"
+            android:layout_marginEnd="4dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/btn_red_bg"
+            android:textAllCaps="false"
+            android:layout_marginHorizontal="4dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_delivered"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:text="Delivered"
+            android:textColor="#525252"
+            android:background="@drawable/btn_gray_bg"
+            android:textAllCaps="false"
+            android:layout_marginStart="4dp"/>
+    </LinearLayout>
+</LinearLayout>

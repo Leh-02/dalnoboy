@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="languages">
+        <item>Українська</item>
+        <item>English</item>
+        <item>Русский</item>
+    </string-array>
+    <color name="button_gray">#EEEEEE</color>
+    <color name="button_gray_text">#525252</color>
+    <color name="button_red">#F66C6C</color>
+    <color name="button_red_text">#FFFFFF</color>
+    <color name="colorBlack">#FF000000</color>
+    <color name="colorPrimary">#E0E0E0</color>
+    <color name="colorWhite">#FFFFFFFF</color>
+    <color name="selector_switch_thumb">#009688</color>
+    <color name="selector_switch_track">#80CBC4</color>
+    <dimen name="footer_height">120dp</dimen>
+    <dimen name="header_height">120dp</dimen>
+    <dimen name="icon_size">40dp</dimen>
+    <string name="app_name">My Application2</string>
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+
+    </style>
+    <style name="Base.Theme.MyApplication2" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.MyApplication2" parent="Base.Theme.MyApplication2"/>
+</resources>

@@ -1,0 +1,134 @@
+[
+    {
+        "merged": "com.example.myapplication2.app-debug-32:/xml_backup_rules.xml.flat",
+        "source": "com.example.myapplication2.app-main-34:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.example.myapplication2.app-debug-32:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.myapplication2.app-main-34:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.myapplication2.app-debug-32:/drawable_btn_gray_bg.xml.flat",
+        "source": "com.example.myapplication2.app-main-34:/drawable/btn_gray_bg.xml"
+    },
+    {
+        "merged": "com.example.myapplication2.app-debug-32:/layout_item_order.xml.flat",
+        "source": "com.example.myapplication2.app-main-34:/layout/item_order.xml"
+    },
+    {
+        "merged": "com.example.myapplication2.app-debug-32:/layout_activity_notifications.xml.flat",
+        "source": "com.example.myapplication2.app-main-34:/layout/activity_notifications.xml"
+    },
+    {
+        "merged": "com.example.myapplication2.app-debug-32:/layout_activity_main.xml.flat",
+        "source": "com.example.myapplication2.app-main-34:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.myapplication2.app-debug-32:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.myapplication2.app-main-34:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.myapplication2.app-debug-32:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.myapplication2.app-main-34:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.myapplication2.app-debug-32:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.myapplication2.app-main-34:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.myapplication2.app-debug-32:/layout_activity_settings.xml.flat",
+        "source": "com.example.myapplication2.app-main-34:/layout/activity_settings.xml"
+    },
+    {
+        "merged": "com.example.myapplication2.app-debug-32:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.myapplication2.app-main-34:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.myapplication2.app-debug-32:/drawable_orders.png.flat",
+        "source": "com.example.myapplication2.app-main-34:/drawable/orders.png"
+    },
+    {
+        "merged": "com.example.myapplication2.app-debug-32:/drawable_order_item_bg.xml.flat",
+        "source": "com.example.myapplication2.app-main-34:/drawable/order_item_bg.xml"
+    },
+    {
+        "merged": "com.example.myapplication2.app-debug-32:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.myapplication2.app-main-34:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.myapplication2.app-debug-32:/drawable_btn_red_bg.xml.flat",
+        "source": "com.example.myapplication2.app-main-34:/drawable/btn_red_bg.xml"
+    },
+    {
+        "merged": "com.example.myapplication2.app-debug-32:/drawable_not.png.flat",
+        "source": "com.example.myapplication2.app-main-34:/drawable/not.png"
+    },
+    {
+        "merged": "com.example.myapplication2.app-debug-32:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.myapplication2.app-main-34:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.myapplication2.app-debug-32:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.myapplication2.app-main-34:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.myapplication2.app-debug-32:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.example.myapplication2.app-main-34:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.myapplication2.app-debug-32:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.myapplication2.app-main-34:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.myapplication2.app-debug-32:/layout_item_notification.xml.flat",
+        "source": "com.example.myapplication2.app-main-34:/layout/item_notification.xml"
+    },
+    {
+        "merged": "com.example.myapplication2.app-debug-32:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.myapplication2.app-main-34:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.myapplication2.app-debug-32:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.myapplication2.app-main-34:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.myapplication2.app-debug-32:/drawable_history.png.flat",
+        "source": "com.example.myapplication2.app-main-34:/drawable/history.png"
+    },
+    {
+        "merged": "com.example.myapplication2.app-debug-32:/drawable_settings.png.flat",
+        "source": "com.example.myapplication2.app-main-34:/drawable/settings.png"
+    },
+    {
+        "merged": "com.example.myapplication2.app-debug-32:/drawable_driverfoto.png.flat",
+        "source": "com.example.myapplication2.app-main-34:/drawable/driverfoto.png"
+    },
+    {
+        "merged": "com.example.myapplication2.app-debug-32:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.myapplication2.app-main-34:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.myapplication2.app-debug-32:/drawable_logo.png.flat",
+        "source": "com.example.myapplication2.app-main-34:/drawable/logo.png"
+    },
+    {
+        "merged": "com.example.myapplication2.app-debug-32:/drawable_prof.png.flat",
+        "source": "com.example.myapplication2.app-main-34:/drawable/prof.png"
+    },
+    {
+        "merged": "com.example.myapplication2.app-debug-32:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.myapplication2.app-main-34:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.myapplication2.app-debug-32:/drawable_home.png.flat",
+        "source": "com.example.myapplication2.app-main-34:/drawable/home.png"
+    },
+    {
+        "merged": "com.example.myapplication2.app-debug-32:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.myapplication2.app-main-34:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.myapplication2.app-debug-32:/layout_activity_orders.xml.flat",
+        "source": "com.example.myapplication2.app-main-34:/layout/activity_orders.xml"
+    }
+]

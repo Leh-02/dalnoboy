@@ -19,6 +19,12 @@
         <activity android:name=".client.HistoryActivity" />
         <activity android:name=".client.SettingsActivity" />
         <activity android:name=".RegistrationActivity" />
+        <activity android:name=".driver.MainActivity" />
+        <activity android:name=".driver.NotificationsActivity" />
+        <activity android:name=".driver.OrdersActivity" />
+        <activity android:name=".driver.SettingsActivity" />
+
+
 
         <activity android:name=".SignInActivity" android:exported="true">
             <intent-filter>
