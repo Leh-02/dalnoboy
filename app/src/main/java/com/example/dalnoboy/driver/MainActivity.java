@@ -1,6 +1,8 @@
 package com.example.dalnoboy.driver;
+import com.example.dalnoboy.R;
 
-import static android.os.Build.VERSION_CODES.R;
+//
+//import static android.os.Build.VERSION_CODES.R;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.activity_main);
+        setContentView(R.layout.activity_main);
 
         try {
             setupNavigation();

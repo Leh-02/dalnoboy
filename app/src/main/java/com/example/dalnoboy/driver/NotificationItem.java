@@ -1,4 +1,5 @@
 package com.example.dalnoboy.driver;
+import com.example.dalnoboy.R;
 
 public class NotificationItem {
     private String title;
