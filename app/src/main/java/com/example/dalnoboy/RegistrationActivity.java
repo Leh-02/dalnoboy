@@ -9,7 +9,8 @@ import android.widget.*;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.dalnoboy.client.MainActivity;
+import com.example.dalnoboy.client.BaseActivity;
+import com.example.dalnoboy.driver.MainActivity;
 
 public class RegistrationActivity extends AppCompatActivity {
 
@@ -23,7 +24,6 @@ public class RegistrationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.registration);
 
-        // Виправлення відповідностей з XML
         lastName = findViewById(R.id.surname);
         firstName = findViewById(R.id.name);
         phone = findViewById(R.id.phone_number);
@@ -33,7 +33,9 @@ public class RegistrationActivity extends AppCompatActivity {
         registerButton = findViewById(R.id.buttonRegister);
         errorText = findViewById(R.id.errorText);
 
-        // Додавання TextWatcher
+        // Initially disable register button
+        registerButton.setEnabled(false);
+
         TextWatcher watcher = new TextWatcherAdapter() {
             @Override
             public void afterTextChanged(Editable s) {
@@ -49,7 +51,6 @@ public class RegistrationActivity extends AppCompatActivity {
 
         roleGroup.setOnCheckedChangeListener((group, checkedId) -> checkFields());
 
-        // Обробка натискання кнопки
         registerButton.setOnClickListener(v -> {
             if (!isAllValid()) {
                 errorText.setText("Будь ласка, заповніть усі поля.");
@@ -57,10 +58,20 @@ public class RegistrationActivity extends AppCompatActivity {
             } else {
                 errorText.setVisibility(View.GONE);
 
-                // Поки що завжди переходимо до клієнтського інтерфейсу
-                Intent intent = new Intent(RegistrationActivity.this, MainActivity.class);
+                int selectedRole = roleGroup.getCheckedRadioButtonId();
+                Intent intent;
+
+                if (selectedRole == R.id.role_customer) {
+                    intent = new Intent(RegistrationActivity.this, com.example.dalnoboy.client.MainActivity.class);
+                } else if (selectedRole == R.id.role_driver) {
+                    intent = new Intent(RegistrationActivity.this, com.example.dalnoboy.driver.MainActivity.class);
+                } else {
+                    // Default to client if no role selected (shouldn't happen due to validation)
+                    intent = new Intent(RegistrationActivity.this, com.example.dalnoboy.client.MainActivity.class);
+                }
+
                 startActivity(intent);
-                finish(); // щоб користувач не повернувся назад на реєстрацію
+                finish();
             }
         });
     }
@@ -78,7 +89,6 @@ public class RegistrationActivity extends AppCompatActivity {
                 roleGroup.getCheckedRadioButtonId() != -1;
     }
 
-    // Спрощений TextWatcher
     abstract class TextWatcherAdapter implements TextWatcher {
         public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
         public void onTextChanged(CharSequence s, int start, int before, int count) {}
